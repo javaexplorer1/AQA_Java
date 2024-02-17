@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-
         System.out.println(checkSum(7, 8));
         System.out.println();
 
@@ -41,16 +40,12 @@ public class Main {
         System.out.println(Arrays.toString(createOneDimensionalArray(7, 28)));
     }
 
-
     public static boolean checkSum(int numberOne, int numberTwo) {
-
         int sum = numberOne + numberTwo;
         return sum >= 10 && sum <= 20;
-
     }
 
     public static void checkSignNumber(int number) {
-
         if (number >= 0) {
             System.out.println("Передали положительное число");
         } else {
@@ -59,24 +54,20 @@ public class Main {
     }
 
     public static boolean checkIfNegative(int number) {
-
         return number < 0;
     }
 
     public static void printString(String aString, int quantity) {
-
         for (int i = 0; i < quantity; i++) {
             System.out.println(aString);
         }
     }
 
     public static boolean isLeapYear(int year) {
-
         return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
     }
 
     public static void replaceElements(int[] array) {
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 0) {
                 array[i] = 1;
@@ -87,7 +78,6 @@ public class Main {
     }
 
     public static int[] arrayFill() {
-
         int[] array = new int[100];
         for (int i = 0; i < array.length; i++) {
             array[i] = i + 1;
@@ -96,7 +86,6 @@ public class Main {
     }
 
     public static void multiplicationElements(int[] array) {
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 6) {
                 array[i] *= 2;
@@ -105,7 +94,6 @@ public class Main {
     }
 
     public static void createTwoDimensionalArray(int dimension) {
-
         int[][] array = new int[dimension][dimension];
         for (int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
@@ -123,7 +111,6 @@ public class Main {
     }
 
     public static int[] createOneDimensionalArray(int len, int initialValue) {
-
         int[] array = new int[len];
         for (int i = 0; i < len; i++) {
             array[i] = initialValue;
