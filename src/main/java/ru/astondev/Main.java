@@ -1,4 +1,4 @@
-package ru.astondevs;
+package ru.astondev;
 
 public class Main {
     public static void main(String[] args) {
