@@ -1,9 +1,7 @@
 package ru.astondevs;
 
 public class Main {
-
     public static void main(String[] args) {
-
         printThreeWords();
         System.out.println();    // to split the output
 
@@ -17,24 +15,17 @@ public class Main {
     }
 
     public static void printThreeWords() {
-
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
+        System.out.println("Orange\nBanana\nApple");
     }
 
     public static void checkSumSign() {
-
         int a = 889;
         int b = -4750;
         System.out.println(a + b >= 0 ? "Сумма положительная" : "Сумма отрицательная");
     }
 
-
     public static void printColor() {
-
         int value = 100;
-
         if (value <= 0) {
             System.out.println("Красный");
         } else if (value <= 100) {
@@ -45,12 +36,8 @@ public class Main {
     }
 
     public static void compareNumbers() {
-
         int a = 21545852;
         int b = 842434;
-
         System.out.println(a >= b ? "a >= b" : "a < b");
     }
-
-
 }
