@@ -10,11 +10,11 @@ public class Main {
                 "Маяк", "Факел", "Вертолет"};
         Map<String, Integer> treeMap = new TreeMap<>();
         for (String elementOfArray : array) {
-            if (!treeMap.containsKey(elementOfArray)) {
-                treeMap.put(elementOfArray, 1);
-            } else {
+            if (treeMap.containsKey(elementOfArray)) {
                 int count = treeMap.get(elementOfArray);
                 treeMap.put(elementOfArray, ++count);
+            } else {
+                treeMap.put(elementOfArray, 1);
             }
         }
         System.out.println("Список уникальных слов:");
