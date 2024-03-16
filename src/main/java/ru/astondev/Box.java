@@ -11,11 +11,11 @@ public class Box<T extends Fruit> {
         return box.isEmpty() ? 0 : box.size() * box.get(0).getUnitWeight();
     }
 
-    public void add(T... fruits) {
+    public final void add(T... fruits) {
         Collections.addAll(box, fruits);
     }
 
-    public boolean compare(Box<?> anotherBox) {
+    public <T extends Fruit> boolean compare(Box<T> anotherBox) {
         return (Math.abs(this.getWeight() - anotherBox.getWeight()) < 0.0001);
     }
 
